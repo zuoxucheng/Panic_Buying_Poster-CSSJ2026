@@ -307,7 +307,7 @@ window.Quarto = {
 <section id="データ可視化" class="level2" header-args:python=":session test :async :results silent">
 <h2 header-args:python=":session test :async :results silent" class="anchored" data-anchor-id="データ可視化">データ可視化</h2>
 <p>Distribution</p>
-<div id="d1a10ed4" class="cell" data-execution_count="1">
+<div id="29ace8b9" class="cell" data-execution_count="1">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
@@ -756,28 +756,28 @@ window.Quarto = {
 <span id="cb3-431"><a href="#cb3-431" aria-hidden="true" tabindex="-1"></a>final_chart <span class="op">=</span> alt.hconcat(left_column, right_column, text_panel, spacing<span class="op">=</span><span class="dv">5</span>)</span>
 <span id="cb3-432"><a href="#cb3-432" aria-hidden="true" tabindex="-1"></a>final_chart.display()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
-<div id="77c05aee" class="cell quarto-layout-panel" data-layout-ncol="2" data-execution_count="2">
+<div id="5198c7f7" class="cell quarto-layout-panel" data-execution_count="2" data-layout-ncol="2">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
 
 <style>
-  #altair-viz-33203f39a1e7471cb44b885a5d43571e.vega-embed {
+  #altair-viz-a1522e0dbbd2475db638ef10b8329dd8.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-33203f39a1e7471cb44b885a5d43571e.vega-embed details,
-  #altair-viz-33203f39a1e7471cb44b885a5d43571e.vega-embed details summary {
+  #altair-viz-a1522e0dbbd2475db638ef10b8329dd8.vega-embed details,
+  #altair-viz-a1522e0dbbd2475db638ef10b8329dd8.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-33203f39a1e7471cb44b885a5d43571e"></div>
+<div id="altair-viz-a1522e0dbbd2475db638ef10b8329dd8"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-33203f39a1e7471cb44b885a5d43571e") {
-      outputDiv = document.getElementById("altair-viz-33203f39a1e7471cb44b885a5d43571e");
+    if (outputDiv.id !== "altair-viz-a1522e0dbbd2475db638ef10b8329dd8") {
+      outputDiv = document.getElementById("altair-viz-a1522e0dbbd2475db638ef10b8329dd8");
     }
 
     const paths = {
@@ -831,23 +831,23 @@ window.Quarto = {
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
 
 <style>
-  #altair-viz-8185264170df4a55981aaeef68149822.vega-embed {
+  #altair-viz-1135deb51b5e4502ac83659af53ef4dd.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-8185264170df4a55981aaeef68149822.vega-embed details,
-  #altair-viz-8185264170df4a55981aaeef68149822.vega-embed details summary {
+  #altair-viz-1135deb51b5e4502ac83659af53ef4dd.vega-embed details,
+  #altair-viz-1135deb51b5e4502ac83659af53ef4dd.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-8185264170df4a55981aaeef68149822"></div>
+<div id="altair-viz-1135deb51b5e4502ac83659af53ef4dd"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-8185264170df4a55981aaeef68149822") {
-      outputDiv = document.getElementById("altair-viz-8185264170df4a55981aaeef68149822");
+    if (outputDiv.id !== "altair-viz-1135deb51b5e4502ac83659af53ef4dd") {
+      outputDiv = document.getElementById("altair-viz-1135deb51b5e4502ac83659af53ef4dd");
     }
 
     const paths = {
@@ -903,7 +903,7 @@ window.Quarto = {
 <p>Correlation Matrix</p>
 <p>変数の相関行列、左下の半分はポジティブ条件、右上の半分はネガティブ条件での相関行列を示す。 <code class="verbatim">prediction</code> は操作チェック項目（ <code class="verbatim">prediction_stability</code>, <code class="verbatim">prediction_feeling</code>, <code class="verbatim">prediction_soldout</code> ）の平均をとった合成変数、 <code class="verbatim">consumption=　は =freq_cook</code> と <code class="verbatim">quan_cook</code> の積の合成変数、 <code class="verbatim">shop=　、 =share</code> 、 <code class="verbatim">post</code> は3因子構造を仮定した場合の因子スコア。</p>
 <p>相関行列のセルをクリックすると変数ペアの散布図と説明が表示される。</p>
-<div id="8131010f" class="cell" data-execution_count="3">
+<div id="7692ca43" class="cell" data-execution_count="3">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># --- 1. Variables and Data Prep ---</span></span>
@@ -1075,23 +1075,23 @@ window.Quarto = {
 <div class="cell-output cell-output-display" data-execution_count="3">
 
 <style>
-  #altair-viz-a6b4965a894048859e847b1e8cd3938b.vega-embed {
+  #altair-viz-866259b024c74ead895d754c79836213.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-a6b4965a894048859e847b1e8cd3938b.vega-embed details,
-  #altair-viz-a6b4965a894048859e847b1e8cd3938b.vega-embed details summary {
+  #altair-viz-866259b024c74ead895d754c79836213.vega-embed details,
+  #altair-viz-866259b024c74ead895d754c79836213.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-a6b4965a894048859e847b1e8cd3938b"></div>
+<div id="altair-viz-866259b024c74ead895d754c79836213"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-a6b4965a894048859e847b1e8cd3938b") {
-      outputDiv = document.getElementById("altair-viz-a6b4965a894048859e847b1e8cd3938b");
+    if (outputDiv.id !== "altair-viz-866259b024c74ead895d754c79836213") {
+      outputDiv = document.getElementById("altair-viz-866259b024c74ead895d754c79836213");
     }
 
     const paths = {
@@ -1158,7 +1158,7 @@ window.Quarto = {
 </section>
 <section id="研究2シミュレーション" class="level2" header-args:python=":session jccs-sim :async :results output">
 <h2 header-args:python=":session jccs-sim :async :results output" class="anchored" data-anchor-id="研究2シミュレーション">研究2：シミュレーション</h2>
-<div id="d9346c59" class="cell" data-execution_count="4">
+<div id="e2fbfc50" class="cell" data-execution_count="4">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
@@ -1174,340 +1174,13 @@ window.Quarto = {
 <section id="モデルについて" class="level3">
 <h3 class="anchored" data-anchor-id="モデルについて">モデルについて</h3>
 <p>　シミュレーションは、<span class="math inline">\(N\)</span> = 2500 の消費者エージェントを含む 50×50 のトーラス状グリッド上で行われる。局所的な品薄をシミュレートするために、個別の「地区（districts）」に分割されている。同じ地区の消費者は買い物先を共有するが、情報を共有する際はその制限を受けない。情報共有の範囲は情報共有半径<span class="math inline">\(R\)</span>によって決まる。<span class="math inline">\(R = [1, 2, 5, 8]\)</span> のときの範囲をそれぞれ図示している。</p>
-<div id="bd9b4aba" class="cell" data-execution_count="5">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.patches <span class="im">as</span> patches  <span class="co"># 1. Import patches</span></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> mpl_toolkits.axes_grid1.inset_locator <span class="im">import</span> mark_inset</span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> create_neighbor(grid, radius, center):</span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>    center_x, center_y <span class="op">=</span> center</span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> radius <span class="op">&lt;=</span> <span class="dv">0</span>: <span class="cf">return</span> <span class="va">None</span></span>
-<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>    y, x <span class="op">=</span> np.ogrid[<span class="op">-</span>radius : radius <span class="op">+</span> <span class="dv">1</span>, <span class="op">-</span>radius : radius <span class="op">+</span> <span class="dv">1</span>]</span>
-<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>    mask <span class="op">=</span> x<span class="op">**</span><span class="dv">2</span> <span class="op">+</span> y<span class="op">**</span><span class="dv">2</span> <span class="op">&lt;=</span> radius<span class="op">**</span><span class="dv">2</span></span>
-<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>    mask[radius, radius] <span class="op">=</span> <span class="dv">0</span></span>
-<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>    mask_val <span class="op">=</span> mask.astype(<span class="bu">int</span>)</span>
-<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>    y1 <span class="op">=</span> <span class="bu">max</span>(<span class="dv">0</span>, center_y <span class="op">-</span> radius)</span>
-<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>    y2 <span class="op">=</span> <span class="bu">min</span>(<span class="dv">50</span>, center_y <span class="op">+</span> radius <span class="op">+</span> <span class="dv">1</span>)</span>
-<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>    x1 <span class="op">=</span> <span class="bu">max</span>(<span class="dv">0</span>, center_x <span class="op">-</span> radius)</span>
-<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>    x2 <span class="op">=</span> <span class="bu">min</span>(<span class="dv">50</span>, center_x <span class="op">+</span> radius <span class="op">+</span> <span class="dv">1</span>)</span>
-<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> y1 <span class="op">&gt;=</span> y2 <span class="kw">or</span> x1 <span class="op">&gt;=</span> x2: <span class="cf">return</span> grid</span>
-<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a>    ky1 <span class="op">=</span> y1 <span class="op">-</span> (center_y <span class="op">-</span> radius)</span>
-<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a>    ky2 <span class="op">=</span> ky1 <span class="op">+</span> (y2 <span class="op">-</span> y1)</span>
-<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a>    kx1 <span class="op">=</span> x1 <span class="op">-</span> (center_x <span class="op">-</span> radius)</span>
-<span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a>    kx2 <span class="op">=</span> kx1 <span class="op">+</span> (x2 <span class="op">-</span> x1)</span>
-<span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a>    grid[y1:y2, x1:x2] <span class="op">+=</span> mask_val[ky1:ky2, kx1:kx2]</span>
-<span id="cb6-23"><a href="#cb6-23" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> grid</span>
-<span id="cb6-24"><a href="#cb6-24" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-25"><a href="#cb6-25" aria-hidden="true" tabindex="-1"></a>grid_size <span class="op">=</span> <span class="dv">50</span></span>
-<span id="cb6-26"><a href="#cb6-26" aria-hidden="true" tabindex="-1"></a>arr <span class="op">=</span> np.zeros((grid_size, grid_size))</span>
-<span id="cb6-27"><a href="#cb6-27" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-28"><a href="#cb6-28" aria-hidden="true" tabindex="-1"></a><span class="co"># Center coordinates</span></span>
-<span id="cb6-29"><a href="#cb6-29" aria-hidden="true" tabindex="-1"></a>cx, cy <span class="op">=</span> <span class="dv">40</span>, <span class="dv">9</span> </span>
-<span id="cb6-30"><a href="#cb6-30" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-31"><a href="#cb6-31" aria-hidden="true" tabindex="-1"></a><span class="co"># Data generation</span></span>
-<span id="cb6-32"><a href="#cb6-32" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> r <span class="kw">in</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">5</span>, <span class="dv">8</span>]:</span>
-<span id="cb6-33"><a href="#cb6-33" aria-hidden="true" tabindex="-1"></a>    arr <span class="op">=</span> create_neighbor(arr, r, (cx, cy))</span>
-<span id="cb6-34"><a href="#cb6-34" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-35"><a href="#cb6-35" aria-hidden="true" tabindex="-1"></a><span class="co"># plot</span></span>
-<span id="cb6-36"><a href="#cb6-36" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="dv">4</span>, <span class="dv">4</span>))</span>
-<span id="cb6-37"><a href="#cb6-37" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-38"><a href="#cb6-38" aria-hidden="true" tabindex="-1"></a>ax.imshow(arr, cmap<span class="op">=</span><span class="st">'binary'</span>, origin<span class="op">=</span><span class="st">"lower"</span>)</span>
-<span id="cb6-39"><a href="#cb6-39" aria-hidden="true" tabindex="-1"></a>ax.set_xlim(<span class="op">-</span><span class="fl">0.5</span>, grid_size <span class="op">-</span> <span class="fl">0.5</span>)</span>
-<span id="cb6-40"><a href="#cb6-40" aria-hidden="true" tabindex="-1"></a>ax.set_ylim(<span class="op">-</span><span class="fl">0.5</span>, grid_size <span class="op">-</span> <span class="fl">0.5</span>)</span>
-<span id="cb6-41"><a href="#cb6-41" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-42"><a href="#cb6-42" aria-hidden="true" tabindex="-1"></a><span class="co"># 2. Add orange rectangle to main plot</span></span>
-<span id="cb6-43"><a href="#cb6-43" aria-hidden="true" tabindex="-1"></a><span class="co"># Coordinates are (x - 0.5, y - 0.5) because grid points are centered</span></span>
-<span id="cb6-44"><a href="#cb6-44" aria-hidden="true" tabindex="-1"></a>rect_main <span class="op">=</span> patches.Rectangle((cx <span class="op">-</span> <span class="fl">0.5</span>, cy <span class="op">-</span> <span class="fl">0.5</span>), <span class="dv">1</span>, <span class="dv">1</span>, linewidth<span class="op">=</span><span class="dv">0</span>, facecolor<span class="op">=</span><span class="st">'orange'</span>)</span>
-<span id="cb6-45"><a href="#cb6-45" aria-hidden="true" tabindex="-1"></a>ax.add_patch(rect_main)</span>
-<span id="cb6-46"><a href="#cb6-46" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-47"><a href="#cb6-47" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> k <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">0</span>, grid_size <span class="op">+</span> <span class="dv">1</span>):</span>
-<span id="cb6-48"><a href="#cb6-48" aria-hidden="true" tabindex="-1"></a>    ax.axhline(k <span class="op">-</span> <span class="fl">0.5</span>, color<span class="op">=</span><span class="st">'gray'</span>, linewidth<span class="op">=</span><span class="fl">0.5</span>, alpha<span class="op">=</span><span class="fl">0.5</span>)</span>
-<span id="cb6-49"><a href="#cb6-49" aria-hidden="true" tabindex="-1"></a>    ax.axvline(k <span class="op">-</span> <span class="fl">0.5</span>, color<span class="op">=</span><span class="st">'gray'</span>, linewidth<span class="op">=</span><span class="fl">0.5</span>, alpha<span class="op">=</span><span class="fl">0.5</span>)</span>
-<span id="cb6-50"><a href="#cb6-50" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> k <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">0</span>, grid_size <span class="op">+</span> <span class="dv">1</span>, <span class="dv">10</span>):</span>
-<span id="cb6-51"><a href="#cb6-51" aria-hidden="true" tabindex="-1"></a>    ax.axhline(k <span class="op">-</span> <span class="fl">0.5</span>, color<span class="op">=</span><span class="st">'black'</span>, linewidth<span class="op">=</span><span class="dv">2</span>)</span>
-<span id="cb6-52"><a href="#cb6-52" aria-hidden="true" tabindex="-1"></a>    ax.axvline(k <span class="op">-</span> <span class="fl">0.5</span>, color<span class="op">=</span><span class="st">'black'</span>, linewidth<span class="op">=</span><span class="dv">2</span>)</span>
-<span id="cb6-53"><a href="#cb6-53" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-54"><a href="#cb6-54" aria-hidden="true" tabindex="-1"></a>ax.set_xticks([])</span>
-<span id="cb6-55"><a href="#cb6-55" aria-hidden="true" tabindex="-1"></a>ax.set_yticks([])</span>
-<span id="cb6-56"><a href="#cb6-56" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-57"><a href="#cb6-57" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> spine <span class="kw">in</span> ax.spines.values():</span>
-<span id="cb6-58"><a href="#cb6-58" aria-hidden="true" tabindex="-1"></a>    spine.set_visible(<span class="va">True</span>)</span>
-<span id="cb6-59"><a href="#cb6-59" aria-hidden="true" tabindex="-1"></a>    spine.set_linewidth(<span class="dv">2</span>) </span>
-<span id="cb6-60"><a href="#cb6-60" aria-hidden="true" tabindex="-1"></a>    spine.set_color(<span class="st">'black'</span>)</span>
-<span id="cb6-61"><a href="#cb6-61" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-62"><a href="#cb6-62" aria-hidden="true" tabindex="-1"></a><span class="co"># Position: [x, y, width, height]</span></span>
-<span id="cb6-63"><a href="#cb6-63" aria-hidden="true" tabindex="-1"></a>axins <span class="op">=</span> ax.inset_axes([<span class="op">-</span><span class="fl">0.25</span>, <span class="fl">0.1</span>, <span class="fl">0.8</span>, <span class="fl">0.8</span>])</span>
-<span id="cb6-64"><a href="#cb6-64" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-65"><a href="#cb6-65" aria-hidden="true" tabindex="-1"></a>axins.imshow(arr, cmap<span class="op">=</span><span class="st">'binary'</span>, origin<span class="op">=</span><span class="st">"lower"</span>)</span>
-<span id="cb6-66"><a href="#cb6-66" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-67"><a href="#cb6-67" aria-hidden="true" tabindex="-1"></a><span class="co"># 3. Add orange rectangle to inset plot</span></span>
-<span id="cb6-68"><a href="#cb6-68" aria-hidden="true" tabindex="-1"></a><span class="co"># (Must create a new patch object, cannot reuse the previous one)</span></span>
-<span id="cb6-69"><a href="#cb6-69" aria-hidden="true" tabindex="-1"></a>rect_ins <span class="op">=</span> patches.Rectangle((cx <span class="op">-</span> <span class="fl">0.5</span>, cy <span class="op">-</span> <span class="fl">0.5</span>), <span class="dv">1</span>, <span class="dv">1</span>, linewidth<span class="op">=</span><span class="dv">0</span>, facecolor<span class="op">=</span><span class="st">'#FF8C00'</span>)</span>
-<span id="cb6-70"><a href="#cb6-70" aria-hidden="true" tabindex="-1"></a>axins.add_patch(rect_ins)</span>
-<span id="cb6-71"><a href="#cb6-71" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-72"><a href="#cb6-72" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> spine <span class="kw">in</span> axins.spines.values():</span>
-<span id="cb6-73"><a href="#cb6-73" aria-hidden="true" tabindex="-1"></a>    spine.set_visible(<span class="va">True</span>)</span>
-<span id="cb6-74"><a href="#cb6-74" aria-hidden="true" tabindex="-1"></a>    spine.set_linewidth(<span class="dv">5</span>) </span>
-<span id="cb6-75"><a href="#cb6-75" aria-hidden="true" tabindex="-1"></a>    spine.set_color(<span class="st">'black'</span>)</span>
-<span id="cb6-76"><a href="#cb6-76" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-77"><a href="#cb6-77" aria-hidden="true" tabindex="-1"></a>axins.set_xlim(<span class="fl">29.5</span>, <span class="fl">49.5</span>)</span>
-<span id="cb6-78"><a href="#cb6-78" aria-hidden="true" tabindex="-1"></a>axins.set_ylim(<span class="op">-</span><span class="fl">0.5</span>, <span class="fl">19.5</span>) </span>
-<span id="cb6-79"><a href="#cb6-79" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-80"><a href="#cb6-80" aria-hidden="true" tabindex="-1"></a>axins.set_xticks([])</span>
-<span id="cb6-81"><a href="#cb6-81" aria-hidden="true" tabindex="-1"></a>axins.set_yticks([])</span>
-<span id="cb6-82"><a href="#cb6-82" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> k <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">0</span>, grid_size <span class="op">+</span> <span class="dv">1</span>):</span>
-<span id="cb6-83"><a href="#cb6-83" aria-hidden="true" tabindex="-1"></a>    axins.axhline(k <span class="op">-</span> <span class="fl">0.5</span>, color<span class="op">=</span><span class="st">'gray'</span>, linewidth<span class="op">=</span><span class="fl">0.5</span>, alpha<span class="op">=</span><span class="fl">0.5</span>)</span>
-<span id="cb6-84"><a href="#cb6-84" aria-hidden="true" tabindex="-1"></a>    axins.axvline(k <span class="op">-</span> <span class="fl">0.5</span>, color<span class="op">=</span><span class="st">'gray'</span>, linewidth<span class="op">=</span><span class="fl">0.5</span>, alpha<span class="op">=</span><span class="fl">0.5</span>)</span>
-<span id="cb6-85"><a href="#cb6-85" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-86"><a href="#cb6-86" aria-hidden="true" tabindex="-1"></a>mark_inset(ax, axins, loc1<span class="op">=</span><span class="dv">1</span>, loc2<span class="op">=</span><span class="dv">3</span>, fc<span class="op">=</span><span class="st">"none"</span>, ec<span class="op">=</span><span class="st">"black"</span>, lw<span class="op">=</span><span class="dv">5</span>)</span>
-<span id="cb6-87"><a href="#cb6-87" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-88"><a href="#cb6-88" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
-<span id="cb6-89"><a href="#cb6-89" aria-hidden="true" tabindex="-1"></a>plt.savefig(<span class="st">'plot.png'</span>, bbox_inches<span class="op">=</span><span class="st">'tight'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
-</div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="assets/radius.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
 </figure>
 </div>
 <p>　毎ステップ、消費者は<span class="math inline">\(P(\text{Shop})_{i,t}\)</span>の確率で買い物する。同地区に同時に多数の消費者が買い物すると、一時的に品薄になる。次のステップに買い物する消費者が減ると、品薄状態から回復する。各地区の品薄状態はバイナリ状態であり、本シミュレーションで設定した閾値<span class="math inline">\(\theta\)</span> = 4人を超えた場合、希少性シグナルを発信するようになる。理論的な希少性シグナルの発信頻度が二項分布<span class="math inline">\(B(100, P(\text{Shop})_{i,t})\)</span>で計算できる。ベースライン条件（Baseline Low）では、偶然に希少性シグナルが発信されることはまれである。極限条件（Baseline High）では、活発な購買により品薄状態が長く続く。</p>
-<div id="06475a71" class="cell" data-execution_count="6">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.colors <span class="im">as</span> mcolors</span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> imageio</span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> os</span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Configuration</span></span>
-<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>grid_size <span class="op">=</span> <span class="dv">10</span></span>
-<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>prob_head <span class="op">=</span> <span class="fl">0.03</span></span>
-<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>n_frames <span class="op">=</span>  <span class="dv">10</span>   <span class="co"># Number of simulation steps in the GIF</span></span>
-<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>threshold <span class="op">=</span> <span class="dv">4</span>        <span class="co"># Threshold to trigger the "Light Orange" grid</span></span>
-<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Define Colors</span></span>
-<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>color_head <span class="op">=</span> <span class="st">'#FF8C00'</span>        <span class="co"># Dark Orange</span></span>
-<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a>color_tail_normal <span class="op">=</span> <span class="st">'#FFFFFF'</span> <span class="co"># White</span></span>
-<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a>color_tail_alert <span class="op">=</span> <span class="st">'#FFDAB9'</span>  <span class="co"># Light Orange (PeachPuff)</span></span>
-<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a><span class="co"># Lists to handle animation</span></span>
-<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a>filenames <span class="op">=</span> []</span>
-<span id="cb7-20"><a href="#cb7-20" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-21"><a href="#cb7-21" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate frames</span></span>
-<span id="cb7-22"><a href="#cb7-22" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(n_frames):</span>
-<span id="cb7-23"><a href="#cb7-23" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 1. Perform Bernoulli Trials</span></span>
-<span id="cb7-24"><a href="#cb7-24" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Generate a 10x10 grid of random outcomes</span></span>
-<span id="cb7-25"><a href="#cb7-25" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 1 = Head, 0 = Tail</span></span>
-<span id="cb7-26"><a href="#cb7-26" aria-hidden="true" tabindex="-1"></a>    grid <span class="op">=</span> np.random.choice([<span class="dv">0</span>, <span class="dv">1</span>], size<span class="op">=</span>(grid_size, grid_size), p<span class="op">=</span>[<span class="dv">1</span><span class="op">-</span>prob_head, prob_head])</span>
-<span id="cb7-27"><a href="#cb7-27" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-28"><a href="#cb7-28" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 2. Check Global Condition</span></span>
-<span id="cb7-29"><a href="#cb7-29" aria-hidden="true" tabindex="-1"></a>    head_count <span class="op">=</span> np.<span class="bu">sum</span>(grid)</span>
-<span id="cb7-30"><a href="#cb7-30" aria-hidden="true" tabindex="-1"></a>    is_alert <span class="op">=</span> head_count <span class="op">&gt;=</span> threshold</span>
-<span id="cb7-31"><a href="#cb7-31" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-32"><a href="#cb7-32" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 3. Create Plot</span></span>
-<span id="cb7-33"><a href="#cb7-33" aria-hidden="true" tabindex="-1"></a>    fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="dv">3</span>,<span class="dv">3</span>))</span>
-<span id="cb7-34"><a href="#cb7-34" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-35"><a href="#cb7-35" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Create an RGB image grid based on the status</span></span>
-<span id="cb7-36"><a href="#cb7-36" aria-hidden="true" tabindex="-1"></a>    rgb_grid <span class="op">=</span> np.zeros((grid_size, grid_size, <span class="dv">3</span>))</span>
-<span id="cb7-37"><a href="#cb7-37" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-38"><a href="#cb7-38" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> r <span class="kw">in</span> <span class="bu">range</span>(grid_size):</span>
-<span id="cb7-39"><a href="#cb7-39" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> c <span class="kw">in</span> <span class="bu">range</span>(grid_size):</span>
-<span id="cb7-40"><a href="#cb7-40" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> grid[r, c] <span class="op">==</span> <span class="dv">1</span>:</span>
-<span id="cb7-41"><a href="#cb7-41" aria-hidden="true" tabindex="-1"></a>                <span class="co"># Cell is Head -&gt; Dark Orange</span></span>
-<span id="cb7-42"><a href="#cb7-42" aria-hidden="true" tabindex="-1"></a>                rgb_grid[r, c] <span class="op">=</span> mcolors.to_rgb(color_head)</span>
-<span id="cb7-43"><a href="#cb7-43" aria-hidden="true" tabindex="-1"></a>            <span class="cf">else</span>:</span>
-<span id="cb7-44"><a href="#cb7-44" aria-hidden="true" tabindex="-1"></a>                <span class="co"># Cell is Tail -&gt; depends on global alert status</span></span>
-<span id="cb7-45"><a href="#cb7-45" aria-hidden="true" tabindex="-1"></a>                <span class="cf">if</span> is_alert:</span>
-<span id="cb7-46"><a href="#cb7-46" aria-hidden="true" tabindex="-1"></a>                    rgb_grid[r, c] <span class="op">=</span> mcolors.to_rgb(color_tail_alert)</span>
-<span id="cb7-47"><a href="#cb7-47" aria-hidden="true" tabindex="-1"></a>                <span class="cf">else</span>:</span>
-<span id="cb7-48"><a href="#cb7-48" aria-hidden="true" tabindex="-1"></a>                    rgb_grid[r, c] <span class="op">=</span> mcolors.to_rgb(color_tail_normal)</span>
-<span id="cb7-49"><a href="#cb7-49" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-50"><a href="#cb7-50" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Display the grid</span></span>
-<span id="cb7-51"><a href="#cb7-51" aria-hidden="true" tabindex="-1"></a>    ax.imshow(rgb_grid)</span>
-<span id="cb7-52"><a href="#cb7-52" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-53"><a href="#cb7-53" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Formatting the grid lines</span></span>
-<span id="cb7-54"><a href="#cb7-54" aria-hidden="true" tabindex="-1"></a>    ax.set_xticks(np.arange(<span class="op">-</span><span class="fl">0.5</span>, <span class="dv">10</span>, <span class="dv">1</span>))</span>
-<span id="cb7-55"><a href="#cb7-55" aria-hidden="true" tabindex="-1"></a>    ax.set_yticks(np.arange(<span class="op">-</span><span class="fl">0.5</span>, <span class="dv">10</span>, <span class="dv">1</span>))</span>
-<span id="cb7-56"><a href="#cb7-56" aria-hidden="true" tabindex="-1"></a>    ax.set_xticklabels([])</span>
-<span id="cb7-57"><a href="#cb7-57" aria-hidden="true" tabindex="-1"></a>    ax.set_yticklabels([])</span>
-<span id="cb7-58"><a href="#cb7-58" aria-hidden="true" tabindex="-1"></a>    ax.grid(color<span class="op">=</span><span class="st">'black'</span>, linestyle<span class="op">=</span><span class="st">'-'</span>, linewidth<span class="op">=</span><span class="dv">1</span>)</span>
-<span id="cb7-59"><a href="#cb7-59" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-60"><a href="#cb7-60" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Title with stats</span></span>
-<span id="cb7-61"><a href="#cb7-61" aria-hidden="true" tabindex="-1"></a>    status_text <span class="op">=</span> <span class="st">"CROWDED!"</span> <span class="cf">if</span> is_alert <span class="cf">else</span> <span class="st">"Normal"</span></span>
-<span id="cb7-62"><a href="#cb7-62" aria-hidden="true" tabindex="-1"></a>    ax.set_title(<span class="ss">f"Shoppers: </span><span class="sc">{</span>head_count<span class="sc">}</span><span class="ss"> | </span><span class="sc">{</span>status_text<span class="sc">}</span><span class="ss">"</span>, loc<span class="op">=</span><span class="st">'left'</span>)</span>
-<span id="cb7-63"><a href="#cb7-63" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-64"><a href="#cb7-64" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Save the current frame</span></span>
-<span id="cb7-65"><a href="#cb7-65" aria-hidden="true" tabindex="-1"></a>    filename <span class="op">=</span> <span class="ss">f'temp_frame_</span><span class="sc">{</span>i<span class="sc">}</span><span class="ss">.png'</span></span>
-<span id="cb7-66"><a href="#cb7-66" aria-hidden="true" tabindex="-1"></a>    plt.savefig(filename)</span>
-<span id="cb7-67"><a href="#cb7-67" aria-hidden="true" tabindex="-1"></a>    plt.close()</span>
-<span id="cb7-68"><a href="#cb7-68" aria-hidden="true" tabindex="-1"></a>    filenames.append(filename)</span>
-<span id="cb7-69"><a href="#cb7-69" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-70"><a href="#cb7-70" aria-hidden="true" tabindex="-1"></a><span class="co"># 4. Compile GIF</span></span>
-<span id="cb7-71"><a href="#cb7-71" aria-hidden="true" tabindex="-1"></a>gif_filename <span class="op">=</span> <span class="st">'bernoulli_grid.gif'</span></span>
-<span id="cb7-72"><a href="#cb7-72" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> imageio.get_writer(gif_filename, mode<span class="op">=</span><span class="st">'I'</span>, duration<span class="op">=</span><span class="dv">5</span>, loop<span class="op">=</span><span class="dv">0</span>) <span class="im">as</span> writer:</span>
-<span id="cb7-73"><a href="#cb7-73" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> filename <span class="kw">in</span> filenames:</span>
-<span id="cb7-74"><a href="#cb7-74" aria-hidden="true" tabindex="-1"></a>        image <span class="op">=</span> imageio.imread(filename)</span>
-<span id="cb7-75"><a href="#cb7-75" aria-hidden="true" tabindex="-1"></a>        writer.append_data(image)</span>
-<span id="cb7-76"><a href="#cb7-76" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-77"><a href="#cb7-77" aria-hidden="true" tabindex="-1"></a><span class="co"># Cleanup temporary images</span></span>
-<span id="cb7-78"><a href="#cb7-78" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> filename <span class="kw">in</span> filenames:</span>
-<span id="cb7-79"><a href="#cb7-79" aria-hidden="true" tabindex="-1"></a>    os.remove(filename)</span>
-<span id="cb7-80"><a href="#cb7-80" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-81"><a href="#cb7-81" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Simulation complete. Saved to </span><span class="sc">{</span>gif_filename<span class="sc">}</span><span class="ss">"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
-<div class="cell-output cell-output-stdout">
-<pre><code>Simulation complete. Saved to bernoulli_grid.gif</code></pre>
-</div>
-</div>
 <p><img src="assets/bernoulli_grid.gif" class="img-fluid"> <img src="assets/crowded_district.png" class="img-fluid"></p>
-<div id="004a046f" class="cell" data-execution_count="7">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> matplotlib.colors <span class="im">import</span> ListedColormap</span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.patches <span class="im">as</span> patches</span>
-<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a><span class="co"># --- Configuration ---</span></span>
-<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>GRID_SIZE <span class="op">=</span> <span class="dv">50</span></span>
-<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>DISTRICT_SIZE <span class="op">=</span> <span class="dv">10</span></span>
-<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>PROBABILITY <span class="op">=</span> <span class="fl">0.03</span></span>
-<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>THRESHOLD <span class="op">=</span> <span class="dv">4</span></span>
-<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Define discrete states for the grid values</span></span>
-<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a>STATE_BG_EMPTY <span class="op">=</span> <span class="dv">0</span>    <span class="co"># White (Sparse district background)</span></span>
-<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a>STATE_BG_FILLED <span class="op">=</span> <span class="dv">1</span>   <span class="co"># Light Orange (Dense district background)</span></span>
-<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a>STATE_CELL <span class="op">=</span> <span class="dv">2</span>        <span class="co"># Thicker Orange (The active cell itself)</span></span>
-<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Colors</span></span>
-<span id="cb9-18"><a href="#cb9-18" aria-hidden="true" tabindex="-1"></a>COLOR_BG_EMPTY <span class="op">=</span> <span class="st">'white'</span></span>
-<span id="cb9-19"><a href="#cb9-19" aria-hidden="true" tabindex="-1"></a>COLOR_BG_FILLED <span class="op">=</span> <span class="st">'#FFCC80'</span></span>
-<span id="cb9-20"><a href="#cb9-20" aria-hidden="true" tabindex="-1"></a>COLOR_CELL <span class="op">=</span> <span class="st">'#FF8C00'</span></span>
-<span id="cb9-21"><a href="#cb9-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-22"><a href="#cb9-22" aria-hidden="true" tabindex="-1"></a><span class="co"># Line styles</span></span>
-<span id="cb9-23"><a href="#cb9-23" aria-hidden="true" tabindex="-1"></a>COLOR_GRID_MINOR <span class="op">=</span> <span class="st">'#E0E0E0'</span> <span class="co"># Very thin grey for cells</span></span>
-<span id="cb9-24"><a href="#cb9-24" aria-hidden="true" tabindex="-1"></a>COLOR_GRID_MAJOR <span class="op">=</span> <span class="st">'black'</span>   <span class="co"># Black for district edges</span></span>
-<span id="cb9-25"><a href="#cb9-25" aria-hidden="true" tabindex="-1"></a>COLOR_HIGHLIGHT <span class="op">=</span> <span class="st">'black'</span>    <span class="co"># Thick highlight for zoom boxes</span></span>
-<span id="cb9-26"><a href="#cb9-26" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-27"><a href="#cb9-27" aria-hidden="true" tabindex="-1"></a><span class="co"># --- Data Generation ---</span></span>
-<span id="cb9-28"><a href="#cb9-28" aria-hidden="true" tabindex="-1"></a>np.random.seed(<span class="dv">42</span>) </span>
-<span id="cb9-29"><a href="#cb9-29" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-30"><a href="#cb9-30" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Initialize grid with random probability (Location of the cells)</span></span>
-<span id="cb9-31"><a href="#cb9-31" aria-hidden="true" tabindex="-1"></a>raw_seeds <span class="op">=</span> np.random.rand(GRID_SIZE, GRID_SIZE) <span class="op">&lt;</span> PROBABILITY</span>
-<span id="cb9-32"><a href="#cb9-32" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-33"><a href="#cb9-33" aria-hidden="true" tabindex="-1"></a><span class="co"># 2. Build the Visualization Grid</span></span>
-<span id="cb9-34"><a href="#cb9-34" aria-hidden="true" tabindex="-1"></a><span class="co"># Initialize with empty background</span></span>
-<span id="cb9-35"><a href="#cb9-35" aria-hidden="true" tabindex="-1"></a>vis_grid <span class="op">=</span> np.full((GRID_SIZE, GRID_SIZE), STATE_BG_EMPTY, dtype<span class="op">=</span><span class="bu">int</span>)</span>
-<span id="cb9-36"><a href="#cb9-36" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-37"><a href="#cb9-37" aria-hidden="true" tabindex="-1"></a>districts_low <span class="op">=</span> []</span>
-<span id="cb9-38"><a href="#cb9-38" aria-hidden="true" tabindex="-1"></a>districts_high <span class="op">=</span> []</span>
-<span id="cb9-39"><a href="#cb9-39" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-40"><a href="#cb9-40" aria-hidden="true" tabindex="-1"></a>num_districts_axis <span class="op">=</span> GRID_SIZE <span class="op">//</span> DISTRICT_SIZE</span>
-<span id="cb9-41"><a href="#cb9-41" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-42"><a href="#cb9-42" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> r <span class="kw">in</span> <span class="bu">range</span>(num_districts_axis):</span>
-<span id="cb9-43"><a href="#cb9-43" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> c <span class="kw">in</span> <span class="bu">range</span>(num_districts_axis):</span>
-<span id="cb9-44"><a href="#cb9-44" aria-hidden="true" tabindex="-1"></a>        r_start, r_end <span class="op">=</span> r <span class="op">*</span> DISTRICT_SIZE, (r <span class="op">+</span> <span class="dv">1</span>) <span class="op">*</span> DISTRICT_SIZE</span>
-<span id="cb9-45"><a href="#cb9-45" aria-hidden="true" tabindex="-1"></a>        c_start, c_end <span class="op">=</span> c <span class="op">*</span> DISTRICT_SIZE, (c <span class="op">+</span> <span class="dv">1</span>) <span class="op">*</span> DISTRICT_SIZE</span>
-<span id="cb9-46"><a href="#cb9-46" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-47"><a href="#cb9-47" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Get the boolean seed map for this district</span></span>
-<span id="cb9-48"><a href="#cb9-48" aria-hidden="true" tabindex="-1"></a>        district_seeds <span class="op">=</span> raw_seeds[r_start:r_end, c_start:c_end]</span>
-<span id="cb9-49"><a href="#cb9-49" aria-hidden="true" tabindex="-1"></a>        count <span class="op">=</span> np.<span class="bu">sum</span>(district_seeds)</span>
-<span id="cb9-50"><a href="#cb9-50" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-51"><a href="#cb9-51" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Get the slice of the visualization grid to modify</span></span>
-<span id="cb9-52"><a href="#cb9-52" aria-hidden="true" tabindex="-1"></a>        vis_slice <span class="op">=</span> vis_grid[r_start:r_end, c_start:c_end]</span>
-<span id="cb9-53"><a href="#cb9-53" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-54"><a href="#cb9-54" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> count <span class="op">&gt;=</span> THRESHOLD:</span>
-<span id="cb9-55"><a href="#cb9-55" aria-hidden="true" tabindex="-1"></a>            <span class="co"># 1. Set Background to Light Orange</span></span>
-<span id="cb9-56"><a href="#cb9-56" aria-hidden="true" tabindex="-1"></a>            vis_slice[:] <span class="op">=</span> STATE_BG_FILLED</span>
-<span id="cb9-57"><a href="#cb9-57" aria-hidden="true" tabindex="-1"></a>            <span class="co"># 2. Layer the Active Cells on top (Thicker Orange)</span></span>
-<span id="cb9-58"><a href="#cb9-58" aria-hidden="true" tabindex="-1"></a>            vis_slice[district_seeds] <span class="op">=</span> STATE_CELL</span>
-<span id="cb9-59"><a href="#cb9-59" aria-hidden="true" tabindex="-1"></a>            districts_high.append((r, c, count))</span>
-<span id="cb9-60"><a href="#cb9-60" aria-hidden="true" tabindex="-1"></a>        <span class="cf">else</span>:</span>
-<span id="cb9-61"><a href="#cb9-61" aria-hidden="true" tabindex="-1"></a>            <span class="co"># 1. Background remains White (STATE_BG_EMPTY)</span></span>
-<span id="cb9-62"><a href="#cb9-62" aria-hidden="true" tabindex="-1"></a>            <span class="co"># 2. Layer the Active Cells on top (Thicker Orange)</span></span>
-<span id="cb9-63"><a href="#cb9-63" aria-hidden="true" tabindex="-1"></a>            vis_slice[district_seeds] <span class="op">=</span> STATE_CELL</span>
-<span id="cb9-64"><a href="#cb9-64" aria-hidden="true" tabindex="-1"></a>            districts_low.append((r, c, count))</span>
-<span id="cb9-65"><a href="#cb9-65" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-66"><a href="#cb9-66" aria-hidden="true" tabindex="-1"></a><span class="co"># --- Selection for Zooming ---</span></span>
-<span id="cb9-67"><a href="#cb9-67" aria-hidden="true" tabindex="-1"></a><span class="co"># Use fallbacks to prevent errors if random generation yields no results</span></span>
-<span id="cb9-68"><a href="#cb9-68" aria-hidden="true" tabindex="-1"></a>zoom_low <span class="op">=</span> districts_low[<span class="dv">0</span>] <span class="cf">if</span> districts_low <span class="cf">else</span> (<span class="dv">0</span>,<span class="dv">0</span>,<span class="dv">0</span>)</span>
-<span id="cb9-69"><a href="#cb9-69" aria-hidden="true" tabindex="-1"></a>zoom_high <span class="op">=</span> districts_high[<span class="dv">0</span>] <span class="cf">if</span> districts_high <span class="cf">else</span> (<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">10</span>)</span>
-<span id="cb9-70"><a href="#cb9-70" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-71"><a href="#cb9-71" aria-hidden="true" tabindex="-1"></a><span class="co"># --- Plotting Helper Function ---</span></span>
-<span id="cb9-72"><a href="#cb9-72" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> setup_grid_lines(ax, rows, cols, minor_interval<span class="op">=</span><span class="dv">1</span>, major_interval<span class="op">=</span><span class="dv">10</span>):</span>
-<span id="cb9-73"><a href="#cb9-73" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Minor ticks (Cells)</span></span>
-<span id="cb9-74"><a href="#cb9-74" aria-hidden="true" tabindex="-1"></a>    ax.set_xticks(np.arange(<span class="op">-</span><span class="fl">0.5</span>, cols, minor_interval), minor<span class="op">=</span><span class="va">True</span>)</span>
-<span id="cb9-75"><a href="#cb9-75" aria-hidden="true" tabindex="-1"></a>    ax.set_yticks(np.arange(<span class="op">-</span><span class="fl">0.5</span>, rows, minor_interval), minor<span class="op">=</span><span class="va">True</span>)</span>
-<span id="cb9-76"><a href="#cb9-76" aria-hidden="true" tabindex="-1"></a>    ax.grid(which<span class="op">=</span><span class="st">'minor'</span>, color<span class="op">=</span>COLOR_GRID_MINOR, linestyle<span class="op">=</span><span class="st">'-'</span>, linewidth<span class="op">=</span><span class="fl">0.5</span>)</span>
-<span id="cb9-77"><a href="#cb9-77" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-78"><a href="#cb9-78" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Major ticks (Districts)</span></span>
-<span id="cb9-79"><a href="#cb9-79" aria-hidden="true" tabindex="-1"></a>    ax.set_xticks(np.arange(<span class="op">-</span><span class="fl">0.5</span>, cols, major_interval), minor<span class="op">=</span><span class="va">False</span>)</span>
-<span id="cb9-80"><a href="#cb9-80" aria-hidden="true" tabindex="-1"></a>    ax.set_yticks(np.arange(<span class="op">-</span><span class="fl">0.5</span>, rows, major_interval), minor<span class="op">=</span><span class="va">False</span>)</span>
-<span id="cb9-81"><a href="#cb9-81" aria-hidden="true" tabindex="-1"></a>    ax.grid(which<span class="op">=</span><span class="st">'major'</span>, color<span class="op">=</span>COLOR_GRID_MAJOR, linestyle<span class="op">=</span><span class="st">'-'</span>, linewidth<span class="op">=</span><span class="fl">1.5</span>)</span>
-<span id="cb9-82"><a href="#cb9-82" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-83"><a href="#cb9-83" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Hide labels</span></span>
-<span id="cb9-84"><a href="#cb9-84" aria-hidden="true" tabindex="-1"></a>    ax.set_xticklabels([])</span>
-<span id="cb9-85"><a href="#cb9-85" aria-hidden="true" tabindex="-1"></a>    ax.set_yticklabels([])</span>
-<span id="cb9-86"><a href="#cb9-86" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-87"><a href="#cb9-87" aria-hidden="true" tabindex="-1"></a><span class="co"># --- Visualization Setup ---</span></span>
-<span id="cb9-88"><a href="#cb9-88" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> plt.figure(figsize<span class="op">=</span>(<span class="dv">8</span>,<span class="dv">3</span>))</span>
-<span id="cb9-89"><a href="#cb9-89" aria-hidden="true" tabindex="-1"></a>gs <span class="op">=</span> fig.add_gridspec(<span class="dv">1</span>, <span class="dv">3</span>, width_ratios<span class="op">=</span>[<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">1</span>])</span>
-<span id="cb9-90"><a href="#cb9-90" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-91"><a href="#cb9-91" aria-hidden="true" tabindex="-1"></a><span class="co"># Create Colormap: 0-&gt;White, 1-&gt;LightOrange, 2-&gt;ThickOrange</span></span>
-<span id="cb9-92"><a href="#cb9-92" aria-hidden="true" tabindex="-1"></a>cmap <span class="op">=</span> ListedColormap([COLOR_BG_EMPTY, COLOR_BG_FILLED, COLOR_CELL])</span>
-<span id="cb9-93"><a href="#cb9-93" aria-hidden="true" tabindex="-1"></a>norm <span class="op">=</span> plt.Normalize(vmin<span class="op">=</span><span class="dv">0</span>, vmax<span class="op">=</span><span class="dv">2</span>)</span>
-<span id="cb9-94"><a href="#cb9-94" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-95"><a href="#cb9-95" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Main Map</span></span>
-<span id="cb9-96"><a href="#cb9-96" aria-hidden="true" tabindex="-1"></a>ax_main <span class="op">=</span> fig.add_subplot(gs[<span class="dv">0</span>])</span>
-<span id="cb9-97"><a href="#cb9-97" aria-hidden="true" tabindex="-1"></a>ax_main.imshow(vis_grid, cmap<span class="op">=</span>cmap, norm<span class="op">=</span>norm, origin<span class="op">=</span><span class="st">'upper'</span>, aspect<span class="op">=</span><span class="st">'equal'</span>)</span>
-<span id="cb9-98"><a href="#cb9-98" aria-hidden="true" tabindex="-1"></a>setup_grid_lines(ax_main, GRID_SIZE, GRID_SIZE, <span class="dv">1</span>, DISTRICT_SIZE)</span>
-<span id="cb9-99"><a href="#cb9-99" aria-hidden="true" tabindex="-1"></a>ax_main.set_title(<span class="ss">f"Full Map (</span><span class="sc">{</span>GRID_SIZE<span class="sc">}</span><span class="ss">x</span><span class="sc">{</span>GRID_SIZE<span class="sc">}</span><span class="ss">)"</span>, fontsize<span class="op">=</span><span class="dv">14</span>)</span>
-<span id="cb9-100"><a href="#cb9-100" aria-hidden="true" tabindex="-1"></a>ax_main.tick_params(axis<span class="op">=</span><span class="st">'both'</span>, which<span class="op">=</span><span class="st">'both'</span>, length<span class="op">=</span><span class="dv">0</span>)</span>
-<span id="cb9-101"><a href="#cb9-101" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-102"><a href="#cb9-102" aria-hidden="true" tabindex="-1"></a><span class="co"># Function to draw highlight box</span></span>
-<span id="cb9-103"><a href="#cb9-103" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> draw_highlight(ax, r_idx, c_idx, color, linewidth):</span>
-<span id="cb9-104"><a href="#cb9-104" aria-hidden="true" tabindex="-1"></a>    x <span class="op">=</span> c_idx <span class="op">*</span> DISTRICT_SIZE <span class="op">-</span> <span class="fl">0.5</span></span>
-<span id="cb9-105"><a href="#cb9-105" aria-hidden="true" tabindex="-1"></a>    y <span class="op">=</span> r_idx <span class="op">*</span> DISTRICT_SIZE <span class="op">-</span> <span class="fl">0.5</span></span>
-<span id="cb9-106"><a href="#cb9-106" aria-hidden="true" tabindex="-1"></a>    rect <span class="op">=</span> patches.Rectangle((x, y), DISTRICT_SIZE, DISTRICT_SIZE, </span>
-<span id="cb9-107"><a href="#cb9-107" aria-hidden="true" tabindex="-1"></a>                             linewidth<span class="op">=</span>linewidth<span class="op">+</span><span class="dv">2</span>, edgecolor<span class="op">=</span>color, facecolor<span class="op">=</span><span class="st">'none'</span>)</span>
-<span id="cb9-108"><a href="#cb9-108" aria-hidden="true" tabindex="-1"></a>    ax.add_patch(rect)</span>
-<span id="cb9-109"><a href="#cb9-109" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-110"><a href="#cb9-110" aria-hidden="true" tabindex="-1"></a><span class="co"># Draw highlights on main map</span></span>
-<span id="cb9-111"><a href="#cb9-111" aria-hidden="true" tabindex="-1"></a>draw_highlight(ax_main, zoom_low[<span class="dv">0</span>], zoom_low[<span class="dv">1</span>], COLOR_HIGHLIGHT, <span class="dv">3</span>)</span>
-<span id="cb9-112"><a href="#cb9-112" aria-hidden="true" tabindex="-1"></a>draw_highlight(ax_main, zoom_high[<span class="dv">0</span>], zoom_high[<span class="dv">1</span>], COLOR_HIGHLIGHT, <span class="dv">3</span>)</span>
-<span id="cb9-113"><a href="#cb9-113" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-114"><a href="#cb9-114" aria-hidden="true" tabindex="-1"></a><span class="co"># 2. Zoom: Sparse</span></span>
-<span id="cb9-115"><a href="#cb9-115" aria-hidden="true" tabindex="-1"></a>ax_z1 <span class="op">=</span> fig.add_subplot(gs[<span class="dv">1</span>])</span>
-<span id="cb9-116"><a href="#cb9-116" aria-hidden="true" tabindex="-1"></a>r_l, c_l <span class="op">=</span> zoom_low[<span class="dv">0</span>], zoom_low[<span class="dv">1</span>]</span>
-<span id="cb9-117"><a href="#cb9-117" aria-hidden="true" tabindex="-1"></a>zoom_data_low <span class="op">=</span> vis_grid[r_l<span class="op">*</span><span class="dv">10</span>:(r_l<span class="op">+</span><span class="dv">1</span>)<span class="op">*</span><span class="dv">10</span>, c_l<span class="op">*</span><span class="dv">10</span>:(c_l<span class="op">+</span><span class="dv">1</span>)<span class="op">*</span><span class="dv">10</span>]</span>
-<span id="cb9-118"><a href="#cb9-118" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-119"><a href="#cb9-119" aria-hidden="true" tabindex="-1"></a>ax_z1.imshow(zoom_data_low, cmap<span class="op">=</span>cmap, norm<span class="op">=</span>norm, origin<span class="op">=</span><span class="st">'upper'</span>, aspect<span class="op">=</span><span class="st">'equal'</span>)</span>
-<span id="cb9-120"><a href="#cb9-120" aria-hidden="true" tabindex="-1"></a>setup_grid_lines(ax_z1, DISTRICT_SIZE, DISTRICT_SIZE, <span class="dv">1</span>, DISTRICT_SIZE)</span>
-<span id="cb9-121"><a href="#cb9-121" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> spine <span class="kw">in</span> ax_z1.spines.values():</span>
-<span id="cb9-122"><a href="#cb9-122" aria-hidden="true" tabindex="-1"></a>    spine.set_edgecolor(COLOR_HIGHLIGHT)</span>
-<span id="cb9-123"><a href="#cb9-123" aria-hidden="true" tabindex="-1"></a>    spine.set_linewidth(<span class="dv">3</span>)</span>
-<span id="cb9-124"><a href="#cb9-124" aria-hidden="true" tabindex="-1"></a>    ax_z1.set_title(<span class="st">"Zoom: Sparse District"</span>, fontsize<span class="op">=</span><span class="dv">12</span>)</span>
-<span id="cb9-125"><a href="#cb9-125" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-126"><a href="#cb9-126" aria-hidden="true" tabindex="-1"></a><span class="co"># 3. Zoom: Dense</span></span>
-<span id="cb9-127"><a href="#cb9-127" aria-hidden="true" tabindex="-1"></a>ax_z2 <span class="op">=</span> fig.add_subplot(gs[<span class="dv">2</span>])</span>
-<span id="cb9-128"><a href="#cb9-128" aria-hidden="true" tabindex="-1"></a>r_h, c_h <span class="op">=</span> zoom_high[<span class="dv">0</span>], zoom_high[<span class="dv">1</span>]</span>
-<span id="cb9-129"><a href="#cb9-129" aria-hidden="true" tabindex="-1"></a>zoom_data_high <span class="op">=</span> vis_grid[r_h<span class="op">*</span><span class="dv">10</span>:(r_h<span class="op">+</span><span class="dv">1</span>)<span class="op">*</span><span class="dv">10</span>, c_h<span class="op">*</span><span class="dv">10</span>:(c_h<span class="op">+</span><span class="dv">1</span>)<span class="op">*</span><span class="dv">10</span>]</span>
-<span id="cb9-130"><a href="#cb9-130" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-131"><a href="#cb9-131" aria-hidden="true" tabindex="-1"></a>ax_z2.imshow(zoom_data_high, cmap<span class="op">=</span>cmap, norm<span class="op">=</span>norm, origin<span class="op">=</span><span class="st">'upper'</span>, aspect<span class="op">=</span><span class="st">'equal'</span>)</span>
-<span id="cb9-132"><a href="#cb9-132" aria-hidden="true" tabindex="-1"></a>setup_grid_lines(ax_z2, DISTRICT_SIZE, DISTRICT_SIZE, <span class="dv">1</span>, DISTRICT_SIZE)</span>
-<span id="cb9-133"><a href="#cb9-133" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> spine <span class="kw">in</span> ax_z2.spines.values():</span>
-<span id="cb9-134"><a href="#cb9-134" aria-hidden="true" tabindex="-1"></a>    spine.set_edgecolor(COLOR_HIGHLIGHT)</span>
-<span id="cb9-135"><a href="#cb9-135" aria-hidden="true" tabindex="-1"></a>    spine.set_linewidth(<span class="dv">3</span>)</span>
-<span id="cb9-136"><a href="#cb9-136" aria-hidden="true" tabindex="-1"></a>    ax_z2.set_title(<span class="st">"Zoom: Dense District"</span>, fontsize<span class="op">=</span><span class="dv">12</span>)</span>
-<span id="cb9-137"><a href="#cb9-137" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-138"><a href="#cb9-138" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
-<span id="cb9-139"><a href="#cb9-139" aria-hidden="true" tabindex="-1"></a>plt.savefig(<span class="st">'plot1.png'</span>, bbox_inches<span class="op">=</span><span class="st">'tight'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
-</div>
 <p>時間tにおけるエージェントiの状態は以下の2つのバイナリ状態で定義できる:</p>
 <p>購買 (<span class="math inline">\(S_{i,t}\)</span>): 買い物をしたか否か。一度買い物したエージェン(<span class="math inline">\(S_{i,t}\)</span>=1)は買い物しなくなる。</p>
 <p>共有 (<span class="math inline">\(H_{i,t}\)</span>): エージェントは近傍エージェントに情報共有しているか否か。情報共有の持続時間(<span class="math inline">\(\tau_{share}\)</span>)は一定である。エージェントは一度しか一次情報を共有しない。</p>
